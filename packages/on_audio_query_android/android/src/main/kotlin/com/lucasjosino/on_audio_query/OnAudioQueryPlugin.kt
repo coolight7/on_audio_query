@@ -138,7 +138,7 @@ class OnAudioQueryPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                         "Application doesn't have access to the library",
                         "Call the [permissionsRequest] method or install a external plugin to handle the app permission."
                     )
-                    break;
+                    return;
                 }
 
                 methodController.find()
